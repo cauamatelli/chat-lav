@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lavanderia Completa</title>
+
+  <!-- ESSENCIAL PARA MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-container">
+  <h1>Login</h1>
+  <input type="text" id="login-usuario" placeholder="Usuário">
+  <input type="password" id="login-senha" placeholder="Senha">
+  <button onclick="entrar()">Entrar</button>
+  <p>Não tem conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a></p>
+</div>
+
+<!-- CADASTRO -->
+<div id="cadastro-container" style="display:none;">
+  <h1>Cadastro</h1>
+  <input type="text" id="cad-usuario" placeholder="Usuário">
+  <input type="password" id="cad-senha" placeholder="Senha">
+  <button onclick="cadastrar()">Cadastrar</button>
+  <p>Já tem conta? <a href="#" onclick="mostrarLogin()">Login</a></p>
+</div>
+
+<!-- APP -->
+<div id="app-container" style="display:none;">
+  <div class="header">🧺 Lavanderia</div>
+
+  <section>
+    <h2>Novo Pedido</h2>
+    <input type="text" id="nome-pedido" placeholder="Nome do pedido">
+    
+    <select id="servico">
+      <option value="lavagem">Lavagem Básica</option>
+      <option value="lavagem+secagem">Lavagem + Secagem</option>
+      <option value="lavagem+secagem+passar">Lavagem + Secagem + Passar</option>
+    </select>
+
+    <input type="number" id="maquina" placeholder="Número da máquina">
+    <button onclick="adicionarPedido()">Enviar</button>
+  </section>
+
+  <section>
+    <h2>Meus Pedidos</h2>
+    <div id="lista"></div>
+  </section>
+
+  <button id="logout-btn" onclick="logout()">Sair</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

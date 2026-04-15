@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE MOBILE FIRST */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 15px;
+}
+
+/* CONTAINERS */
+#login-container,
+#cadastro-container,
+#app-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TÍTULOS */
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/* FORMULÁRIOS */
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* evita zoom no iPhone */
+}
+
+/* BOTÕES */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* CARDS */
+.card {
+  background-color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card p {
+  font-size: 0.9em;
+}
+
+/* BOTÃO DO CARD */
+.card button {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 0.8em;
+}
+
+/* PROGRESSO */
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  font-size: 0.7em;
+  line-height: 18px;
+  transition: width 0.4s ease;
+}
+
+/* LINKS */
+a {
+  color: #3498db;
+  font-size: 0.9em;
+}
+
+/* LOGOUT */
+#logout-btn {
+  margin-top: 15px;
+  background-color: #e74c3c;
+}
+
+/* ESPAÇAMENTO */
+section {
+  margin-top: 15px;
+}
